@@ -1,4 +1,4 @@
-const auth = process.env.UNSPLASH_ACCESS_KEY;
+const auth = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
 const BASE_URL = "https://api.unsplash.com";
 
 /**
@@ -35,3 +35,5 @@ export async function searchImages(query) {
 
   return data;
 }
+
+// console.log(searchImages("hello"));
